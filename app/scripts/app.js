@@ -11,8 +11,8 @@ var app = angular.module('angNewsApp', [
 app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/posts.html',
+        controller: 'PostsCtrl'
       })
       .otherwise({
         redirectTo: '/'
