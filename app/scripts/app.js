@@ -5,7 +5,8 @@ var app = angular.module('angNewsApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'firebase'
 ]);
 
 app.config(function ($routeProvider) {
@@ -17,4 +18,6 @@ app.config(function ($routeProvider) {
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+
+.constant('FIREBASE_URL', 'https://fiery-fire-7125.firebaseio.com')
