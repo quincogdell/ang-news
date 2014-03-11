@@ -15,9 +15,13 @@ app.config(function ($routeProvider) {
         templateUrl: 'views/posts.html',
         controller: 'PostsCtrl'
       })
+      .when('/posts/:postId', {
+        templateUrl: '/views/showpost.html',
+        controller: 'PostViewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
   })
 
-.constant('FIREBASE_URL', 'https://fiery-fire-7125.firebaseio.com')
+.constant('FIREBASE_URL', 'https://fiery-fire-7125.firebaseio.com/')
