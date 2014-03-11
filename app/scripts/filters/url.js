@@ -6,6 +6,6 @@ app.filter('hostnameFromUrl', function() {
 
     url.href = str;
 
-    return url.hostname
-  }
-})
+    return url.hostname;
+  };
+});

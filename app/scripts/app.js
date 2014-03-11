@@ -19,9 +19,17 @@ app.config(function ($routeProvider) {
         templateUrl: '/views/showpost.html',
         controller: 'PostViewCtrl'
       })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'AuthCtrl'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'AuthCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
   })
 
-.constant('FIREBASE_URL', 'https://fiery-fire-7125.firebaseio.com/')
+.constant('FIREBASE_URL', 'https://fiery-fire-7125.firebaseio.com/');
